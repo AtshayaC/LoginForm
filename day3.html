@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <title>
+            Day3
+        </title>
+        <style>
+            body{
+                background-image: linear-gradient(to left ,rgb(156, 17, 198),rgb(41, 208, 220));
+
+            }
+            .b{
+                display: flex;
+                justify-content: space-between;
+                
+            }
+            .input
+            {
+                box-shadow: 3px 5px ,grey;
+            }
+        
+        </style>
+        <script>
+            function myfunc(event)
+            {
+                event.preventDefault();
+                var a=document.getElementById("name").value;
+                var b=document.getElementById("username").value;
+                var c=document.getElementById("email").value;
+                var d=document.getElementById("phone").value;
+                var e=document.getElementById("password").value;
+                var f=document.getElementById("confirm").value;
+                var g=document.querySelector('input[name="gender"]:checked').value;
+                document.write("<center><b>REGISTERED SUCCESFULLY</b></center>");
+                document.write("<center>your name is </center>" ,a);
+                document.write("<br><center>your Username is </center>",b);
+                document.write("<br><center>your email id is </center>",c);
+                document.write("<br><center>your phone number is </center>",d);
+                document.write("<br><center>your password is </center>",e);
+                document.write("<br><center>your confirm password is </center>",f);
+                document.write("<br><center>your gender is </center>",g);
+            
+
+
+
+            }
+        </script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+VIC:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <body>
+        
+        <div class="a">
+            <h1 style="font-family: Playwrite AU VIC, cursive"><center>Login Page</center></h1>
+            <form method="post">
+                
+                <table cellspacing="10" align="center" cellpadding="20" style="background-color: rgb(245, 242, 240);">
+                    
+                    <tr><td><h3>Registration</h3></td></tr>
+                
+                    <tr>
+                <td><b>Full Name</b><br>
+                <input type="text" name="name" placeholder="enter Full name" id="name"/><br>
+                </td>
+                <td><b>UserName</b><br>
+                <input type="text" name="username" placeholder="enter Username" id="username"/><br>
+                </td>
+                </tr>
+                <tr>
+                    <td><b>Email</b><br>
+                        <input type="email" name="email" placeholder="enter email id" id="email"/><br>
+                    </td>
+                    <td><b>Phone Number</b><br>
+                        <input type="tel" name="mobile" placeholder="enter mobile number" id="phone"/><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Password</b><br>
+                    <input type="password" name="password" placeholder="enter password" id="password"/><br>
+                    </td>
+                    <td><b>Confirm Password</b><br>
+                        <input type="password" name="confirm" placeholder="Confirm your password" id="confirm"/><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Gender</b><br>
+                        <div class="b">
+                    <input type="radio" name="gender" value="male" />Male
+                    <input type="radio" style="margin-left: 40px;"value="female" name="gender" checked/>Female
+                     <input type="radio" style="margin-left: 40px;" value="prefer no to say" name="gender"/>Prefer not to say
+                    </div>
+                    </td>
+                </tr>
+                <tr>
+                    
+                    <td>
+                        
+                        <input type="submit"name="register" value="Register" style="background-image: linear-gradient(to left ,rgb(156, 17, 198),rgb(41, 208, 220)); padding: 20px; padding-left: 100px;padding-right: 100px;position: relative; left: 150px;" onClick="myfunc(event)"/>
+                        </div>
+                    </td>
+                </tr> 
+                </table>
+
+
+
+    
+        </div>
+        </form>
+    </body>
+</html>
